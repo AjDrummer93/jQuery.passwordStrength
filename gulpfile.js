@@ -35,9 +35,6 @@ gulp.task('hint', function() {
 
 gulp.task('watch', function() {
     gulp.watch(__dirname + '/Web/js/jQuery.passwordStrength.js', ['hint']);
-    return karma.server.start({
-      configFile: __dirname + '/karma.conf.js'
-    });
 });
 
 gulp.task('scripts', function () {
